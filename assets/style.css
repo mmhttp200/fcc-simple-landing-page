@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+:root {
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+#home h1 {
+  font-size: 86px;
+  font-weight: 300;
+  color: #2EC4B6;
+}
+
+section {
+  display: grid;
+  min-width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 300;
+  animation-name: load-page;
+  animation-duration: 3s;
+}
+section .advantage {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "image text";
+}
+section .advantage img {
+  grid-name: image;
+}
+section .advantage div {
+  grid-name: text;
+}
+section .advantage div h3 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #2EC4B6;
+}
+section .advantage div .btn {
+  background-color: #0081A7;
+  color: #FFF;
+}
+
+a {
+  color: #2EC4B6;
+}
+
+@keyframes load-page {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

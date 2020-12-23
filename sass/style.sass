@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap')
+
+$color-dark: #011627
+$color-orange: #FF9F1C
+$color-strong-blue: #0081A7
+$color-smooth-blue: #2EC4B6
+$color-white: #FFF
+
+$font-family: Roboto, sans-serif
+$font-h1-light-size: 86px
+$font-h1-light-weight: 300
+$font-h3-bold-size: 36px
+$font-h3-bold-weight: 900
+$font-light-weight: 300
+$font-regular-size: 36px
+
+
+:root
+    scroll-behavior: smooth
+    word-wrap: break-word
+
+body
+    font-family: $font-family
+    
+
+#home h1
+    font-size: $font-h1-light-size
+    font-weight: $font-h1-light-weight
+    color: $color-smooth-blue
+
+section
+
+    display: grid
+    min-width: 100%
+    min-height: 100vh
+    justify-content: center
+    align-items: center
+    font-size: $font-regular-size
+    font-weight: $font-light-weight
+    animation-name: load-page
+    animation-duration: 3s
+
+    .advantage
+
+        display: grid
+        grid-template-columns: auto auto
+        grid-template-rows: auto
+        grid-template-areas: "image text"
+
+        img
+            grid-name: image
+        
+        div
+            grid-name: text
+
+            h3
+                font-size: $font-h3-bold-size
+                font-weight: $font-h3-bold-weight
+                color: $color-smooth-blue
+            
+            .btn
+                background-color: $color-strong-blue
+                color: $color-white
+
+
+a
+    color: $color-smooth-blue
+
+@keyframes load-page
+    0%
+        opacity: 0
+    100%
+        opacity: 1
